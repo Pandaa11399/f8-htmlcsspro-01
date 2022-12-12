@@ -55,13 +55,17 @@ a {
 }
 
 /* ==========Header========== */
-/* ==========Navbar========== */
 .header {
-  position: relative;
+  position: sticky;
+  z-index: 1;
+  top: -26px;
   background-color: #e6f0ff;
-  height: 100vh;
 }
 
+.actions {
+  padding: 8px 0;
+}
+/* ==========Navbar========== */
 .navbar {
   display: flex;
   align-items: center;
@@ -105,8 +109,16 @@ a {
 }
 
 /* ==========Hero========== */
+.header-hero {
+  position: relative;
+  top: -91px;
+  background-color: #e6f0ff;
+  height: 100vh;
+  padding-top: 130px;
+}
+
 .hero {
-  margin-top: 130px;
+  margin-top: 91px;
 }
 
 .hero .info {
