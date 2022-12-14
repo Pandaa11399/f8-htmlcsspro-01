@@ -6,6 +6,11 @@
   --primary-color: #0f1b4c;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -51,7 +56,7 @@ a {
 }
 
 .random-cl {
-  background-color: var(--choose-color, #1F3BB1);
+  background-color: var(--choose-color, #1f3bb1);
 }
 
 /* ==========Header Navbar========== */
@@ -110,10 +115,12 @@ a {
 
 /* ==========Header Hero========== */
 .header-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   background-color: #e6f0ff;
   height: calc(100vh - 91px);
-  padding-top: 130px;
 }
 
 .hero {
@@ -172,7 +179,7 @@ a {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.25;
-  color: #7D8589;
+  color: #7d8589;
 }
 
 .clients .row-desc .desc-1 {
@@ -233,7 +240,7 @@ a {
   font-size: 1.6rem;
   line-height: 1.875;
   text-align: center;
-  color: #5A6473;
+  color: #5a6473;
   margin: 20px auto 0px;
 }
 
@@ -252,7 +259,7 @@ a {
   font-weight: 500;
   font-size: 2rem;
   line-height: 1.1;
-  color: #3B3C45;
+  color: #3b3c45;
   margin-top: 26px;
 }
 
@@ -261,7 +268,7 @@ a {
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.5;
-  color: #0689FF;
+  color: #0689ff;
   margin-top: 10px;
 }
 
@@ -283,7 +290,7 @@ a {
 /* ==========Featured========== */
 /* Header */
 .featured {
-  background: #F5FAFE;
+  background: #f5fafe;
   height: 100vh;
   padding: 110px 0px;
   margin-top: 41px;
@@ -310,7 +317,7 @@ a {
   line-height: 1.88px;
   display: flex;
   align-items: flex-end;
-  color: #5A6473;
+  color: #5a6473;
 }
 
 .featured .row-2 .link {
@@ -318,7 +325,7 @@ a {
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 27px;
-  color: #0689FF;
+  color: #0689ff;
 }
 
 .featured .row-2 .arrow-right {
@@ -342,8 +349,8 @@ a {
   width: 100%;
   height: 227px;
   object-fit: cover;
-  border-top-left-radius: 12px ;
-  border-top-right-radius: 12px ;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .featured .item .body {
@@ -361,7 +368,7 @@ a {
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.5;
-  color: #A3A6AB;
+  color: #a3a6ab;
   margin-top: 11px;
   word-break: break-all;
 }
@@ -401,7 +408,8 @@ a {
   position: relative;
 }
 
-.stats .img-block, .stats .info {
+.stats .img-block,
+.stats .info {
   width: 50%;
 }
 
@@ -444,10 +452,10 @@ a {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.875;
-  color: #5A6473;
+  color: #5a6473;
 }
 
-.stats .stats-trend { 
+.stats .stats-trend {
   position: absolute;
   left: 0;
   top: 0;
@@ -473,13 +481,13 @@ a {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
 .stats .stats-trend .separate {
   width: 193.62px;
   height: 1.2px;
-  background: #E9E9E9;
+  background: #e9e9e9;
   margin-top: 25.5px;
 }
 
@@ -504,10 +512,10 @@ a {
   font-weight: 450;
   font-size: 0.7rem;
   line-height: 1.6rem;
-  background: var(--choose-color, #629DE9);
+  background: var(--choose-color, #629de9);
   text-align: center;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .stats .stats-trend .avatar-block .avatar:first-child {
@@ -532,7 +540,7 @@ a {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.5;
-  color: #7B8087;
+  color: #7b8087;
 }
 
 /* ==========Subscribe script========== */
@@ -557,7 +565,7 @@ a {
   font-weight: 600;
   font-size: 3.5rem;
   line-height: 1.5;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .subscribe-script .info .desc {
@@ -565,7 +573,7 @@ a {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.88;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.75;
 }
 
@@ -601,14 +609,15 @@ a {
 }
 
 .footer .row-1 .heading {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
-  color: #1C1C1D;
+  color: #1c1c1d;
 }
 
-.footer .row-1 .list, .footer .row-1 .desc {
+.footer .row-1 .list,
+.footer .row-1 .desc {
   margin-top: 42px;
 }
 
@@ -616,10 +625,11 @@ a {
   margin-top: 18px;
 }
 
-.footer .row-1 .item a, .footer .row-1 .desc {
+.footer .row-1 .item a,
+.footer .row-1 .desc {
   font-weight: 400;
   font-size: 1.6rem;
-  color: #7A7A7E;
+  color: #7a7a7e;
 }
 
 .footer .row-1 .social-block {
@@ -645,15 +655,5 @@ a {
 .footer .row-2 .copyright {
   font-weight: 400;
   font-size: 1.4rem;
-  color: #C2C2C2;
-
+  color: #c2c2c2;
 }
-
-
-
-
-
-
-
-
-
